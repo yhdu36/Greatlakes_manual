@@ -1,3 +1,7 @@
+# Garmire server login
+ssh uniqname@garmire-login.dcmb.med.umich.edu
+Then enter the password
+
 # Great Lakes SLURM Tutorial
 
 * Using the Great Lakes cluster and batch computing with SLURM
