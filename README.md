@@ -121,11 +121,11 @@ Rather than using the modules provided, people can also use conda to manage soft
 #### I. Create new environment from scratch
 1. Create a conda environment called `r-bioinfo` and install R base:
 ```
-conda create -n r-bioinfoconda-forge::r-base
+conda create -n myenv
 ```
 2. Activate the environment and install more packages:
 ```
-conda activate r-bioinfo
+conda activate myenv
 conda install conda-forge::r-seurat
 ```
 #### II. Clone your existing conda environment to Greatlakes
