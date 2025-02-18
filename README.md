@@ -2,14 +2,18 @@
 ssh uniqname@garmire-login.dcmb.med.umich.edu
 Then enter the password
 
+# VPN connection
+If you have a non-CORE-IMAGE laptop/computer, UMICH VPN is required to access the server. <br>
+Install the Cisco client following the instructions here: https://its.umich.edu/enterprise/wifi-networks/vpn/getting-started
+
 # Great Lakes SLURM Tutorial
 
 * Using the Great Lakes cluster and batch computing with SLURM
-* You must establish a user login on Great Lakes by filling out [this form](https://arc.umich.edu/login-request).
+* You must establish a user login on Great Lakes by filling out [this form (Create an HPC User login)](https://its.umich.edu/advanced-research-computing/high-performance-computing/great-lakes/getting-started).
 * Contact IT to be added under `lgarmire` root account if you have not done so.
 
 ## Important notice on data storage
- -  People **should not** run jobs directly from login node, using [Greatlakes OnDemand](https://arc.umich.edu/open-ondemand/) or submit `sbatch` jobs instead.
+ -  People **should not** run jobs directly from login node, using [Greatlakes OnDemand](https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard/) or submit `sbatch` jobs instead.
  - Due to regulation, people **should not** store any Garmire's lab related data and code under default Greatlakes home directory: `/home/uniquname`
  - Instead, you **should** store all lab materials under Garmire's NAS: 
  ```
@@ -42,7 +46,7 @@ cd /nfs/dcmb-lgarmire/uniqname
 ```
 
 ## Greatlakes OnDemand: Interactive job with GUI
-1. Log into https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard
+1. Log into https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard/
 2. Select from `Interactive Apps` menu
 3. Request for the time/memory/cores/modules as you need
 4. Launch
@@ -86,9 +90,8 @@ Full SLURM guide: https://arc.umich.edu/greatlakes/slurm-user-guide/
 
 
 ## Load modules
-https://arc.umich.edu/document/environment-modules-for-using-software/
 
-1. Pre-installed bioinformatics tools on Greatlakes including *seurat, bcftools, cellprofiler, cellranger, gatk, picard, plink, monocle*, etc.:  
+1. [Pre-installed bioinformatics tools on Greatlakes](https://websites.umich.edu/~greatlakes/catalog/) including *seurat, bcftools, cellprofiler, cellranger, gatk, picard, plink, monocle*, etc.:  
 ```
 module load Bioinformatics
 ```
@@ -147,6 +150,8 @@ conda create -n new_env --file package-list.txt
 ## Resources
 
 * General tutorial: https://github.com/SchlossLab/Great_Lakes_SLURM
+* Slurm website: https://documentation.its.umich.edu/arc-hpc/slurm-user-guide
+* Greatlakes website: https://its.umich.edu/advanced-research-computing/high-performance-computing/great-lakes
 * Slides: [Introduction to the Great Lakes cluster and batch computing with SLURM](https://docs.google.com/presentation/d/1yZCyfBaK9GVCI64oUW-99HtUO5RNwSlqpeUNo8BjgWI/edit#slide=id.p1)
 * Slides: [Advanced batch computing with SLURM on the Great Lakes cluster](https://github.com/SchlossLab/Great_Lakes_SLURM)
 * Slides: [MPI profiling with Allinea MAP](https://cscar.research.umich.edu/wp-content/uploads/sites/5/2016/04/galexv20160606.pdf)
