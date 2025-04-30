@@ -1,7 +1,3 @@
-# Garmire server login
-ssh uniqname@garmire-login.dcmb.med.umich.edu
-Then enter the password
-
 # VPN connection
 If you have a non-CORE-IMAGE laptop/computer, UMICH VPN is required to access the server. <br>
 Install the Cisco client following the instructions here: https://its.umich.edu/enterprise/wifi-networks/vpn/getting-started
@@ -9,12 +5,12 @@ Install the Cisco client following the instructions here: https://its.umich.edu/
 # Great Lakes SLURM Tutorial
 
 * Using the Great Lakes cluster and batch computing with SLURM
-* You must establish a user login on Great Lakes by filling out [this form (Create an HPC User login)](https://its.umich.edu/advanced-research-computing/high-performance-computing/great-lakes/getting-started).
+* You must establish a user login on Great Lakes by filling out [this form (Create an HPC User login)](https://its.umich.edu/advanced-research-computing/high-performance-computing/login).
 * Contact IT to be added under `lgarmire` root account if you have not done so.
 
 ## Important notice on data storage
- -  People **should not** run jobs directly from login node, using [Greatlakes OnDemand](https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard/) or submit `sbatch` jobs instead.
- - Due to regulation, people **should not** store any Garmire's lab related data and code under default Greatlakes home directory: `/home/uniquname`
+ -  People **should not** run jobs directly from login node, using [Greatlakes OnDemand https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard/](https://greatlakes.arc-ts.umich.edu/pun/sys/dashboard/) or submit `sbatch` jobs instead.
+ - Due to regulation, people **should not** store any Garmire's lab-related data and code under the default Greatlakes home directory: `/home/uniquname`
  - Instead, you **should** store all lab materials under Garmire's NAS: 
  ```
  /nfs/dcmb-lgarmire/uniqname	#personal NAS home
@@ -29,6 +25,12 @@ Install the Cisco client following the instructions here: https://its.umich.edu/
  /nfs/turbo/umms-lgarmire/home/uniqname
  ```
 
+## Github Code Backup
+ -  All ongoing project codes should be stored in a private repo on GitHub
+ -  All published code should be pushed to Garmire Group GitHub page:
+ 1. Log into https://github.com/lanagarmire group account
+ 2.  Fork your project from your personal repo
+ 3. Add your personal account as the collaborator from the group account end
 
 
 ## Login
